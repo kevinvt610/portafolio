@@ -38,7 +38,7 @@ const Parte1_destok = () => {
             </div>
 
             {/* Global Bottom Gradient */}
-            <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#2703A6] to-transparent z-20 pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-full h-[50vh] bg-gradient-to-t from-[#2703A6] to-transparent z-20 pointer-events-none"></div>
             {/* Overlay Text - Signature Style */}
             <div className="absolute bottom-[5%] w-full flex flex-col items-center justify-center z-30 text-white pb-4">
                 <h2 className="font-champion-gothic font-bold text-4xl md:text-6xl tracking-wide uppercase leading-none text-center">
@@ -46,6 +46,11 @@ const Parte1_destok = () => {
                 </h2>
                 <p className="font-champion-gothic text-lg md:text-2xl tracking-widest text-center uppercase opacity-90">
                     Full Stack Junior
+                </p>
+            </div>
+            <div className="absolute bottom-8 left-4 z-40">
+                <p className="font-champion-gothic text-[10px] sm:text-xs text-white/50 tracking-widest uppercase">
+                    (DESPLÁZA PARA SABER MAS)
                 </p>
             </div>
         </section>
