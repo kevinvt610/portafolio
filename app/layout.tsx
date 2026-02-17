@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Antonio, Arvo } from "next/font/google";
+import { Geist, Geist_Mono, Antonio, Arvo, Anton, Caveat } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,15 +12,26 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const anton = Anton({
+  weight: "400",
+  variable: "--font-anton",
+  subsets: ["latin"],
+});
+
 const antonio = Antonio({
-  weight: "700", // Antonio usually looks good in bold for display
-  variable: "--font-champion-gothic", // Keeping the variable name to minimize refactoring in other files
+  weight: ["100", "700"], // Added 100 for thin variant
+  variable: "--font-champion-gothic",
   subsets: ["latin"],
 });
 
 const arvo = Arvo({
   weight: ["400", "700"],
   variable: "--font-arvo",
+  subsets: ["latin"],
+});
+
+const caveat = Caveat({
+  variable: "--font-caveat",
   subsets: ["latin"],
 });
 
@@ -36,9 +47,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${antonio.variable} ${arvo.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${antonio.variable} ${arvo.variable} ${anton.variable} ${caveat.variable} antialiased`}
       >
         {children}
       </body>
